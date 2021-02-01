@@ -1,4 +1,3 @@
-
 sudo: required
 
 services:
@@ -7,8 +6,8 @@ services:
 language: bash
 
 before_script:
-    - "docker build -t Gummer666/autobuilds ."
-    - "docker container run --detach --publish 8080:80 Gummer666/autobuilds"
+    - "docker build -t tomschneeberger/autobuilds ."
+    - "docker container run --detach --publish 8080:80 tomschneeberger6/autobuilds"
     - docker ps
 
 script:
