@@ -7,7 +7,7 @@ language: bash
 
 before_script:
     - "docker build -t tomschneeberger/autobuilds ."
-    - "docker container run --detach --publish 8080:80 tomschneeberger6/autobuilds"
+    - "docker container run --detach --publish 8080:80 tomschneeberger/autobuilds"
     - docker ps
 
 script:
